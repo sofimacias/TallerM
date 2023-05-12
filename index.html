@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-arriba">
+      ANFIBIA
+    </div>
+    <div class="logo-abajo">
+      PODCAST
+    </div>
+  </header>
+</body>
+
+<section id="portada">
+  <h1>Se parte del podcast</h1>
+  <h2>Ganate tu entrada</h2>
+  <h4>Obtené tu lugar y podrás compartir junto al equipo de “Todo es Fake” este especial episodio!</h4>
+  <button id="scrollto-form" class="standard">Conseguila GRATIS!</button>
+</section>
+
+<section id="info-1">
+  <div class="banner-fechalugar">
+    <div class="info-item">
+      <img class="icon" src="./assets/images/calendar.png">
+      <p class="info">Sábado 17 de Junio</p>
+    </div>
+    <div class="info-item">
+      <img class="icon" src="./assets/images/location.png">
+      <p class="info">Buenos Aires, Argentina</p>
+    </div>
+  </div>
+
+  <div class="logo-texto">
+    <img class="logo" src="./assets/images/logo.jpg">
+    <div>
+      <p class="texto">
+        Este 17 de junio , en Buenos Aires se sortearán entradas para participar en vivo del podcast
+        “Todo es Fake”. Tan solo ingresando tus datos podrás ganarte tu entrada.
+      </p>
+      <p class="texto-apurate">
+        ¡Apurate que los cupos son limitados!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="info-2">
+  <div class="contenedor-de-texto">
+    <h3 class="titulo">¿De qué vamos a hablar?</h3>
+    <p class="texto">
+      En este capítulo analizaremos por qué YouTube
+      no es la nueva televisión y cómo se puede ganar
+      plata haciendo videos caseros.
+    </p>
+  </div>
+  <div class="contenedor-de-texto">
+    <h3 class="titulo">¿Quién va a estar?</h3>
+    <p class="texto">
+      Nos acompañarán el Doctor en Ciencias
+      Sociales Mario Carlón y la especialista en
+      youtubers Fernanda Ibáñez.
+    </p>
+  </div>
+</section>
+
+<section id="info-3">
+  <div class="contenedor-info-3">
+    <h3>Podrás:</h3>
+    <ul>
+      <li>&bull; Escucharlo antes que nadie.</li>
+      <li>&bull; Presenciarlo en vivo.</li>
+      <li>&bull; Participar con ellos.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="formulario">
+  <div class="formulario-contenedor">
+    <h3>Ingresá tus datos</h3>
+    <form id="elemento-formulario" action="#">
+      <label for="nombre_apellido">Nombre y Apellido</label>
+      <input class="regular" type="text" id="nombre_apellido" name="nombre_apellido">
+
+      <label for="email">Email</label>
+      <input class="regular" type="text" id="email" name="email">
+
+      <label for="telefono">Teléfono</label>
+      <input class="regular" type="text" id="telefono" name="telefono">
+
+      <label for="edad">Edad</label>
+      <input class="regular" type="text" id="edad" name="edad">
+
+      <label>¿Ya habías escuchado algún episodio del podcast?</label>
+      <div class="radio-container">
+        <label for="si-radio">Sí</label>
+        <input class="radio" type="radio" id="si-radio" name="respuesta" value="si">
+
+        <label for="no-radio">No</label>
+        <input class="radio" type="radio" id="no-radio" name="respuesta" value="no">
+      </div>
+      <div class="button-contenedor">
+        <button class="standard" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="popup-contenedor oculto feedback">
+  <div class="popup">
+    <div class="cerrar">X</div>
+    <h4><span id="dato-nombre_apellido"></span> tus datos han sido enviados con éxito!</h4>
+    <p>
+    En brevedad te mandaremos tu entrada y la informacion necesaria al mail 
+    <span id="dato-email"></span> y/o <span id="dato-telefono"></span>, para 
+    mantenernos en  contacto.
+    </p>
+    <h4>¡Muchas gracias!</h4>    
+  </div>
+</div>
+
+<footer>
+  <div class="contenido-footer">
+    <div class="logofooter">
+      ANFIBIA<br>PODCAST
+    </div>
+    <img src="./assets/images/redes_sociales.jpg">
+  </div>
+</footer>
+
+</html>
